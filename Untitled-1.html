@@ -269,13 +269,25 @@
     .radio-group label {
         margin-left: 5px;
     }
+    form button {
+    background-color: #022e5b;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 9px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 20%;
+    height: 40px;
+    align-self: flex-end;
+}
  </style>
 </head>
 <body>
     <aside class="sidebar">
         <div class="sidebar-header">
             <div class="logo-container">
-                <img src="C:\Users\DBIT\Desktop\circle logo with white background (1).png" alt="logo" />
+                <img src="circle logo with white background (1).png" alt="logo" />
             </div>
             <h1>IMS</h1>
         </div>
@@ -342,44 +354,48 @@
     </aside>
     <div class="content">
         <section id="new-enrolment">
-            <center><b><h1>STUDENTS PORTAL</h1></b></center>
+            <center><b><h1>Ibhan Management System</h1></b></center>
             <h3>New Enrolment</h3>
             <form>
                 <div class="form-group">
-                    <label for="student-name">Student Name:</label>
-                    <input type="text" id="student-name" name="student-name">
+                    <label for="dob">Student Name:</label>
+                    <input type="text" id="Student Name" name="Student Name" placeholder="Enter Student Name" required>
                 </div>
                 <div class="form-group">
                     <label for="dob">Date of Birth:</label>
-                    <input type="date" id="dob" name="dob">
-                </div>
+                    <input type="date" id="dob" name="dob" required>             
+               </div>
                 <div class="form-group">
-                    <label for="student-id">Student ID:</label>
-                    <input type="text" id="student-id" name="student-id">
+                    <label for="dob">Aadhar Number:</label>
+                    <input type="text" id="Aadhar Number" name="Aadhar Number" placeholder="Enter Aadhar Number" required>
                 </div>
                 <div class="form-group">
                     <label for="phone-number">Phone Number:</label>
-                    <input type="text" id="phone-number" name="phone-number">
+                    <input type="text" id="Phone Number" name="Phone Number" placeholder="Enter Phone Number " required>
+
                 </div>
                 <div class="form-group">
                     <label for="alternate-phone">Alternate Phone Number:</label>
-                    <input type="text" id="alternate-phone" name="alternate-phone">
+                    <input type="text" id="Phone Number" name="Phone Number" placeholder="Enter Alternate Phone Number" required>
+
                 </div>
                 <div class="form-group">
                     <label for="email">E-Mail:</label>
-                    <input type="email" id="email" name="email">
+                    <input type="text" id="E-Mail" name="E-Mail" placeholder="Enter E-Mail" required>
+
                 </div>
                 <div class="form-group">
                     <label for="address">Address:</label>
-                    <input type="text" id="address" name="address">
+                    <input type="text" id="Address" name="Address" placeholder="Enter Address" required>
+
                 </div>
                 <div class="form-group">
                     <label for="city">City / Village:</label>
-                    <input type="text" id="city" name="city">
+                    <input type="text" id="City / Village" name="City / Village" placeholder="Enter City / Village" required>
                 </div>
                 <div class="form-group">
                     <label for="state">State:</label>
-                    <input type="text" id="state" name="state">
+                    <input type="text" id="State" name="State" placeholder="Enter State" required>
                 </div>
                 <div class="form-group">
                     <label for="district">District:</label>
@@ -418,9 +434,7 @@
                         <option value="district3">Mailam</option>
                         <option value="district3">The Nilgiris</option>
                         <option value="district3">Namakkal (East)</option>
-                        <option value="district3">Kallakurichi (North)
-
-                        </option>
+                        <option value="district3">Kallakurichi (North)</option>
                         <option value="district3">Perambalur</option>
                         <option value="district3">Dharapuram</option>
                     
@@ -429,109 +443,11 @@
                 </div>
                 <div class="form-group">
                     <label for="pincode">Pincode:</label>
-                    <input type="text" id="pincode" name="pincode">
+                    <input type="text" id="Pincode" name="Pincode" placeholder="Enter Pincode" required>
                 </div>
                 <div class="form-group form-full-width">
-                    <h3>Qualification Details</h3>
-                </div>
-                <div class="form-group">
-                    <label for="tenth-score">10th Score in Percentage:</label>
-                    <input type="text" id="tenth-score" name="tenth-score">
-                </div>
-                <div class="form-group">
-                    <label for="twelfth-score">12th Score in Percentage:</label>
-                    <input type="text" id="twelfth-score" name="twelfth-score">
-                </div>
-                <div class="form-group">
-                    <label for="twelfth-group">12th Group:</label>
-                    <input type="text" id="twelfth-group" name="twelfth-group">
-                </div>
-                <div class="form-group">
-                    <label for="highest-qualification">Highest Qualification:</label>
-                    <input type="text" id="highest-qualification" name="highest-qualification">
-                </div>
-                <div class="form-group">
-                    <label for="degree-score">Degree Score in Percentage:</label>
-                    <input type="text" id="degree-score" name="degree-score">
-                </div>
-                <div class="form-group">
-                    <label for="passed-out-year">Passed out Year:</label>
-                    <input type="text" id="passed-out-year" name="passed-out-year">
-                </div>
-                <div class="form-group">
-                    <label for="experience">Experience:</label>
-                    <input type="text" id="experience" name="experience">
-                </div>
-                <div class="form-group">
-                    <label for="skills">Skills:</label>
-                    <input type="text" id="skills" name="skills">
-                </div>
-                <div class="form-group form-full-width">
-                    <label for="description">Description:</label>
-                    <textarea id="description" name="description"></textarea>
-                </div>
-                <div class="form-group form-full-width">
-                    <h3>Student Status</h3>
-                </div>
-                <div class="form-group radio-group">
-                    <div>
-                        <label for="enrolled">Enrolled</label>
-                        <input type="radio" id="enrolled" name="student-status" value="Enrolled">
-                    </div>
-                </div>
-                <div class="form-group radio-group">
-                    <div>
-                        <label for="enquiry">Enquiry</label>
-                        <input type="radio" id="enquiry" name="student-status" value="Enquiry">
-                    </div>
-                </div>
-                <div class="form-group radio-group">
-                    <div>
-                        <label for="waiting-list">Waiting List</label>
-                        <input type="radio" id="waiting-list" name="student-status" value="Waiting List">
-                    </div>
-                </div>
-                <div class="form-group radio-group">
-                    <div>
-                        <label for="attend-demo">Attend Demo</label>
-                        <input type="radio" id="attend-demo" name="student-status" value="Attend Demo">
-                    </div>
-                </div>
+                <button text="submit"><a href="file:///C:/Users/DBIT/Desktop/home%20page%20login/Qualification%20Details.html">Next</button></a>
 
-                <div class="form-group form-full-width">
-                    <h3>Course Details</h3>
-                </div>
-                <div class="form-group">
-                    <label for="batch-code">Batch Code:</label>
-                    <input type="text" id="batch-code" name="batch-code">
-                </div>
-                <div class="form-group">
-                    <label for="course">Course:</label>
-                    <input type="text" id="course" name="course">
-                </div>
-                <div class="form-group">
-                    <label for="syllabus">Syllabus:</label>
-                    <input type="text" id="syllabus" name="syllabus">
-                </div>
-                <div class="form-group">
-                    <label for="course-start-date">Course Start Date:</label>
-                    <input type="date" id="course-start-date" name="course-start-date">
-                </div>
-                <div class="form-group">
-                    <label for="course-completion-date">Course Tentative Completion Date:</label>
-                    <input type="date" id="course-completion-date" name="course-completion-date">
-                </div>
-                <div class="form-group">
-                    <label for="tutor-name">Tutor Name:</label>
-                    <input type="text" id="tutor-name" name="tutor-name">
-                </div>
-                <div class="form-group">
-                    <label for="tutor-id">Tutor ID:</label>
-                    <input type="text" id="tutor-id" name="tutor-id">
-                </div>
-
-                <div class="form-group form-full-width">
-                    <center><button type="submit">Submit</button></center>
                 </div>
             </form>
         </section>
