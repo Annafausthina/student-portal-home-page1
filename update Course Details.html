@@ -19,7 +19,7 @@
 
         body {
             min-height: 100vh;
-            background-image: url('Copy-of-BINUS-Apa-Itu-Strategi-Marketing-Communication-dan-Contoh-Penerapannya_-_Copy.jpg');
+            background-image: url(Copy-of-BINUS-Apa-Itu-Strategi-Marketing-Communication-dan-Contoh-Penerapannya_\ -\ Copy.jpg);
             display: flex;
         }
 
@@ -37,14 +37,14 @@
             transition: all 0.4s ease;
         }
 
+        .sidebar:hover {
+            width: 260px;
+        }
+
         .sidebar .logo-container {
             text-align: center;
             padding: 15px 0;
             display: flex;
-        }
-
-        .sidebar:hover {
-            width: 260px;
         }
 
         .sidebar .sidebar-header img {
@@ -78,7 +78,7 @@
 
         .sidebar-links h3 {
             color: #fff;
-            font-weight: bold;
+            font-weight: 10OPX;
             white-space: nowrap;
             margin: 10px 0;
             position: relative;
@@ -140,6 +140,16 @@
             border-radius: 4px;
         }
 
+        .sidebar-header .hide.brand.text {
+            display: none;
+        }
+
+        .sidebar-header .hide .brand.logo {
+            display: block;
+            width: 100%;
+            height: 75%;
+        }
+
         .dropdown {
             position: relative;
         }
@@ -156,7 +166,7 @@
         }
 
         .dropdown-content a {
-            color: white;
+            color: black;
             padding: 12px 16px;
             text-decoration: none;
             display: block;
@@ -202,18 +212,18 @@
             border: 1px solid #d79797;
             border-radius: 5px;
         }
-
         form button {
             background-color: #022e5b;
-            color: #fff;
+            color: rgb(255, 255, 255);
             padding: 10px 20px;
             border: none;
             border-radius: 9px;
             cursor: pointer;
             transition: background-color 0.3s;
-            width: auto;
+            width: 20%;
             height: 40px;
         }
+        
 
         form button:hover {
             background-color: #74afea;
@@ -227,6 +237,10 @@
             flex-direction: row;
             align-items: center;
             justify-content: space-between;
+        }
+
+        .sidebar-header {
+            margin-left: 1px;
         }
 
         .new-enrolment h1 {
@@ -252,32 +266,46 @@
         .radio-group label {
             margin-left: 5px;
         }
-        .form-group.submit-group {
-            grid-column: span 2;
-            display: flex;
-            justify-content: flex-end;
-            gap: 10px;
-        }
-        .form-group.submit-group {
-    grid-column: span 2;
-    display: flex;
-    justify-content: flex-end;
-    gap: 10px; /* Add spacing between the buttons */
-   
-}
 
-form button {
-    background-color: #022e5b;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 9px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    width: 20%;
-    height: 40px;
-    align-self: flex-end;
-}
+        /* Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(3, 3, 3, 0.4);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content {
+            background-color: #ffffff;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #6f6969;
+            width: 80%;
+            max-width: 400px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .modal-content button {
+            background-color: #0f5b02;
+            color: #fcfcfc;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 9px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .modal-content button:hover {
+            background-color: #90ea74;
+        }
 
     </style>
 </head>
@@ -314,7 +342,7 @@ form button {
             </li>
             <li>
                 <div class="dropdown">
-                    <a href="file:///C:/Users/DBIT/Desktop/home%20page%20login/update%20details.html">
+                    <a href="Filters.html">
                         <span class="material-symbols-outlined">ios_share</span>Update Details
                     </a>
                 </div>
@@ -350,112 +378,75 @@ form button {
             </li>
         </ul>
     </aside>
-
-    <main class="content">
-        <form>
+    <div class="content">
+        <form id="enrolment-form">
             <div class="form-group form-full-width">
-                <h3>Qualification Details</h3>
+                <h3>Update Course Details</h3>
             </div>
             <div class="form-group">
-                <label for="tenth-score">10th Score in Percentage:</label>
-                <input type="text" id="tenth-score" name="tenth-score">
+                <label for="batch-code">Batch Code:</label>
+                <input type="text" id="Batch Code" name="Batch Code" placeholder="Enter Batch Code" required>
             </div>
             <div class="form-group">
-                <label for="twelfth-score">12th Score in Percentage:</label>
-                <input type="text" id="twelfth-score" name="twelfth-score">
+                <label for="course">Course:</label>
+                <input type="text" id="Course" name="Course" placeholder="Enter Course" required>
             </div>
             <div class="form-group">
-                <label for="twelfth-group">12th Group:</label>
-                <input type="text" id="twelfth-group" name="twelfth-group">
+                <label for="syllabus">Syllabus:</label>
+                <input type="text" id="Syllabus" name="Syllabus" placeholder="Enter Syllabus" required>
             </div>
             <div class="form-group">
-                <label for="highest-qualification">Highest Qualification:</label>
-                <input type="text" id="Highest Qualification" name="Highest Qualification" placeholder="Enter Highest Qualification" required>
-            </div>
-            <div class="form-group">
-                <label for="degree-score">Degree Score in Percentage:</label>
-                <input type="text" id="Degree Score in Percentage" name="Degree Score in Percentage" placeholder="Enter Degree Score in Percentage" required>
-            </div>
-            <div class="form-group">
-                <label for="passed-out-year">Passed out Year:</label>
-                <select id="Year" name="Year" placeholder="Year" required>
-                    <option value="Year">1995</option>
-                        <option value="Year">1996</option>
-                        <option value="Year">1997</option>
-                        <option value="Year">1998</option>
-                        <option value="Year">1999</option>
-                        <option value="Year">2000</option>
-                        <option value="Year">2001</option>
-                        <option value="Year">2002</option>
-                        <option value="Year">2003</option>
-                        <option value="Year">2004</option>
-                        <option value="Year">2005</option>
-                        <option value="Year">2006</option>
-                        <option value="Year">2007</option>
-                        <option value="Year">2008</option>
-                        <option value="Year">2009</option>
-                        <option value="Year">2010</option>
-                        <option value="Year">2011</option>
-                        <option value="Year">2012</option>
-                        <option value="Year">2013</option>
-                        <option value="Year">2014</option>
-                        <option value="Year">2015</option>
-                        <option value="Year">2016</option>
-                        <option value="Year">2017</option>
-                        <option value="Year">2018</option>
-                        <option value="Year">2019</option>
-                        <option value="Year">2020</option>
-                        <option value="Year">2021</option>
-                        <option value="Year">2022</option>
-                        <option value="Year">2023</option>
-                        <option value="Year">2024</option>
+                <label for="course-start-date">Course Start Date:</label>
+                <input type="date" id="course-start-date" name="course-start-date">
 
-                </select>
             </div>
             <div class="form-group">
-                <label for="experience">Experience:</label>
+                <label for="course-completion-date">Course Tentative Completion Date:</label>
+                <input type="date" id="course-completion-date" name="course-completion-date">
+            </div>
+            <div class="form-group">
+                <label for="tutor-name">Tutor Name:</label>
                 <input type="text" id="Experience" name="Experience" placeholder="Enter Experience" required>
             </div>
             <div class="form-group">
-                <label for="skills">Skills:</label>
-                <input type="text" id="Skills" name="Skills" placeholder="Enter Skills" required>
-            </div>
-            <div class="form-group form-full-width">
-                <label for="description">Description:</label>
-                <input type="text" id="Description" name="Description" placeholder="Enter Description" required>
-            </div>
-            <div class="form-group form-full-width">
-                <h3>Student Status</h3>
-            </div>
-            <div class="form-group radio-group">
-                <div>
-                    <label for="enrolled">Enrolled</label>
-                    <input type="radio" id="enrolled" name="student-status" value="Enrolled">
-                </div>
-            </div>
-            <div class="form-group radio-group">
-                <div>
-                    <label for="enquiry">Enquiry</label>
-                    <input type="radio" id="enquiry" name="student-status" value="Enquiry">
-                </div>
-            </div>
-            <div class="form-group radio-group">
-                <div>
-                    <label for="waiting-list">Waiting List</label>
-                    <input type="radio" id="waiting-list" name="student-status" value="Waiting List">
-                </div>
-            </div>
-            <div class="form-group radio-group">
-                <div>
-                    <label for="attend-demo">Attend Demo</label>
-                    <input type="radio" id="attend-demo" name="student-status" value="Attend Demo">
-                </div>
+                <label for="tutor-id">Tutor ID:</label>
+                <input type="text" id="tutor-id" name="tutor-id">
             </div>
             <div class="form-group submit-group">
-                <button type="button" onclick="history.back()">Back<a href="file:///C:/Users/DBIT/Desktop/home%20page%20login/Untitled-1.html"></a></button>
-                <button text="submit"><a href="file:///C:/Users/DBIT/Desktop/home%20page%20login/couse.html">Next</button></a>            </div>
+                <button type="button" onclick="history.back()">Back<a href="file:///C:/Users/DBIT/Desktop/home%20page%20login/Qualification%20Details.html"></a></button><br>
+                <button type="submit">Submit</button>
+            </div>
         </form>
-    </main>
+    </div>
+
+    <!-- Modal -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <h2>Success!</h2>
+            <p>Your form has been submitted successfully.</p>
+            <button onclick="redirectToPage()">OK</button>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("enrolment-form").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            // Show the modal
+            document.getElementById("successModal").style.display = "flex";
+        });
+
+        function redirectToPage() {
+            window.location.href = "file:///C:/Users/DBIT/Desktop/home%20page%20login/Untitled-1.html"; // Redirect to the specified page
+        }
+
+        // Hide the modal when clicking outside of it
+        window.onclick = function(event) {
+            var modal = document.getElementById("successModal");
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
 </body>
 </html>
-
